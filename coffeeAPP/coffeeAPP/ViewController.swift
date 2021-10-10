@@ -53,6 +53,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if UIApplication.shared.canOpenURL(url! as URL) {
             UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
             //test111
+            //test12345
         }
     }
 }
