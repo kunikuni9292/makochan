@@ -52,7 +52,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let url = NSURL(string: goriraUrlArray[indexPath.row])
         if UIApplication.shared.canOpenURL(url! as URL) {
             UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
-            //test
+            //test111
         }
     }
 }
