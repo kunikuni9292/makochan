@@ -14,6 +14,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func didTapHpButton(_ sender: UIButton) {
+        //外部ブラウザでURLを開く
+            let url = NSURL(string: "https://ipsummakoto.wixsite.com/mysite")
+            if UIApplication.shared.canOpenURL(url! as URL) {
+              UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+            }
+    }
+    
 }
 
