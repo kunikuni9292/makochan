@@ -39,11 +39,13 @@ class ViewController: UIViewController {
         }
 }
     
-    @IBAction func didTapYoyaku(_ sender: Any) {
+    @IBAction func didTapLine(_ sender: UIButton) {
         //外部ブラウザでURLを開く
             let url = NSURL(string: "https://lin.ee/vlIZL4y")
             if UIApplication.shared.canOpenURL(url! as URL) {
               UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
     }
+    
 }
 }
+
