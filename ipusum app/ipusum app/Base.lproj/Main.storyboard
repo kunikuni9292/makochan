@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="120.66666666666667" height="150"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="HP"/>
                                         <connections>
                                             <action selector="didTapHpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KEO-XF-lqf"/>
                                         </connections>
@@ -33,7 +33,10 @@
                                         <rect key="frame" x="189.66666666666666" y="0.0" width="120.33333333333334" height="150"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Instagram"/>
+                                        <connections>
+                                            <action selector="didTapInstagramButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1w-9E-nTq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -47,13 +50,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="120.66666666666667" height="150"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Blog"/>
+                                        <connections>
+                                            <action selector="didTapBlogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7j7-Xc-FeD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTD-Jr-CYe">
                                         <rect key="frame" x="189.66666666666666" y="0.0" width="120.33333333333334" height="150"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="予約"/>
+                                        <connections>
+                                            <action selector="didTapBookingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lcg-rG-MuR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
