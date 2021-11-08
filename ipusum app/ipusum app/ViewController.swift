@@ -27,8 +27,8 @@ enum WebUrlType: String {
     
     var url: String {
         switch self {
-        case .HP: return "https://ipsummakoto.wixsite.com/mysit"
-        case .instagram: return "https://www.apple.com/jp/"
+        case .HP: return "https://ipsummakoto.wixsite.com/mysite"
+        case .instagram: return "http:www.instagram.com/i.p.s.u.m.3324"
         case .blog: return "https://ameblo.jp/ipsum0324/"
         case .booking: return "https://line.me/R/ti/p/%40051xowtp"
         }
