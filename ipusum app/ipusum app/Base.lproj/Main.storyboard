@@ -35,7 +35,7 @@
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Instagram"/>
                                         <connections>
-                                            <action selector="didTapInstagramButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1w-9E-nTq"/>
+                                            <action selector="didTapHpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dv0-r3-vVE"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -52,7 +52,7 @@
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Blog"/>
                                         <connections>
-                                            <action selector="didTapBlogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7j7-Xc-FeD"/>
+                                            <action selector="didTapHpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c84-jy-UA6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTD-Jr-CYe">
@@ -61,7 +61,7 @@
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="予約"/>
                                         <connections>
-                                            <action selector="didTapBookingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lcg-rG-MuR"/>
+                                            <action selector="didTapHpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhO-II-7ji"/>
                                         </connections>
                                     </button>
                                 </subviews>

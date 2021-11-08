@@ -9,11 +9,29 @@ import UIKit
 
 //ここでURLを一括管理
 enum WebUrlType: String {
-    case HP = "https://ipsummakoto.wixsite.com/mysit"
-    case instagram = "https://www.apple.com/jp/"
-    case blog = "https://ameblo.jp/ipsum0324/"
-    case booking = "https://line.me/R/ti/p/%40051xowtp"
-     
+    case HP
+    case instagram
+    case blog
+    case booking
+    
+    init(title: String?) {
+        switch title {
+        case "HP": self = .HP
+        case "Instagram": self = .instagram
+        case "Blog": self = .blog
+        case "予約": self = .booking
+        default: self = .HP
+        }
+    }
+    
+    var url: String {
+        switch self {
+        case .HP: return "https://ipsummakoto.wixsite.com/mysit"
+        case .instagram: return "https://www.apple.com/jp/"
+        case .blog: return "https://ameblo.jp/ipsum0324/"
+        case .booking: return "https://line.me/R/ti/p/%40051xowtp"
+        }
+    }
 }
 class ViewController: UIViewController {
     
@@ -22,29 +40,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    //外部ブラウザでURLを開く役割
-    func webExternal(url:WebUrlType) {
-        let url = NSURL(string: url.rawValue)
+    //HPボタンが押された時
+    @IBAction func didTapHpButton(_ sender: UIButton) {
+        let _text = sender.titleLabel?.text
+        let type = WebUrlType(title: _text)
+        let url = NSURL(string: type.url)
         if UIApplication.shared.canOpenURL(url! as URL) {
             UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
         }
-    }
-    
-    //HPボタンが押された時
-    @IBAction func didTapHpButton(_ sender: UIButton) {
-        webExternal(url: .HP)
-    }
-    //Instagramボタンが押された時
-    @IBAction func didTapInstagramButton(_ sender: UIButton) {
-        webExternal(url: .instagram)
-    }
-    //Blogボタンが押された時
-    @IBAction func didTapBlogButton(_ sender: UIButton) {
-        webExternal(url: .blog)
-    }
-    //予約ボタンが押された時
-    @IBAction func didTapBookingButton(_ sender: UIButton) {
-        webExternal(url: .booking)
     }
 }
 
